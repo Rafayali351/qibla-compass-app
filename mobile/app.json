@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Qibla & Prayer Times",
+    "slug": "qibla-prayer-times",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0A192F"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.qibla.prayertimes",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Your location is required to calculate accurate prayer times and the precise Qibla direction to Mecca.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Your location is required to calculate accurate prayer times and the precise Qibla direction to Mecca.",
+        "NSMotionUsageDescription": "Magnetometer and motion sensors are required to orient the real-time Qibla compass dial."
+      }
+    },
+    "android": {
+      "package": "com.qibla.prayertimes",
+      "adaptiveIcon": {
+        "backgroundColor": "#0A192F",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "HIGH_SAMPLING_RATE_SENSORS"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
